@@ -1,0 +1,28 @@
+[
+  { "name": "ilPost", "url": "ilpost.it" },
+  { "name": "theGuardian", "url": "https://www.theguardian.com/europe" },
+  {
+    "name": "consultaMobilitaTorino",
+    "url": "http://consulte.comune.torino.it/bicitraffico"
+  },
+  { "name": "sole24hInfodata", "url": "https://www.infodata.ilsole24ore.com/" },
+  { "name": "theGuardian", "url": "https://www.theguardian.com/international" },
+  { "name": "politicoEU", "url": "https://www.politico.eu/" },
+  { "name": "carbonBrief", "url": "https://www.carbonbrief.org/" },
+  { "name": "africaReport", "url": "https://www.theafricareport.com/" },
+  { "name": "pagellaPolitica", "url": "https://pagellapolitica.it/" },
+  { "name": "laVoce", "url": "https://lavoce.info/" },
+  { "name": "eurActiv", "url": "https://www.euractiv.com/" },
+  {
+    "name": "nature",
+    "url": "https://www.nature.com/nature/articles?type=research-briefing&year=2024"
+  },
+  { "name": "ieee", "url": "https://spectrum.ieee.org/" },
+  { "name": "leScienze", "url": "https://www.lescienze.it/" },
+  { "name": "hackerNews", "url": "https://news.ycombinator.com/news" },
+  {
+    "name": "nature",
+    "url": "https://www.nature.com/nature/articles?type=nature-briefing"
+  },
+  { "name": "alphaSignalAI", "url": "https://alphasignalai.beehiiv.com/" }
+]

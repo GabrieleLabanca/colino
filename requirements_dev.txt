@@ -1,0 +1,7 @@
+-r requirements.txt 
+pylint
+black
+pytest
+requests-mock
+matplotlib
+seaborn
