@@ -13,6 +13,8 @@ from datetime import datetime
 import newspaper
 from concurrent.futures import ThreadPoolExecutor
 
+from .database import select_last_week_articles_by_source
+
 
 initialized = False
 
@@ -104,7 +106,9 @@ def article_to_dict(article: Article) -> dict:
 
 
 def transform_articles(articles: List[Article], newspaper_name: str) -> List[dict]:
-    filtered_articles = [article for article in articles if article.text and len(article.text) > 10]
+
+    articles_url_already_in_database = [x.get('url') for x in select_last_week_articles_by_source(newspaper_name).data   ]
+    filtered_articles = [article for article in articles if article.text and len(article.text) > 10 and article.url not in articles_url_already_in_database]
     results = []
     with ThreadPoolExecutor(3) as executor:
         futures = [executor.submit(lambda article: {"newspaper": newspaper_name, **article_to_dict(article)}, article) for article in filtered_articles]

@@ -2,7 +2,6 @@ import json
 import click
 from src.collect_articles import fetch_articles, article_to_dict, transform_articles
 from src.database import insert_articles
-from itertools import batched
 from prpl import prpl
 
 @click.group()
